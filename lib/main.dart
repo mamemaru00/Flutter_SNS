@@ -1,21 +1,13 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  // カラム
-  final col = Column(
-      mainAxisAlignment: MainAxisAlignment.center,
-      crossAxisAlignment: CrossAxisAlignment.center,
-      children: const [
-        Text('バナナ'),
-        Text('リンゴ'),
-        Text('ブドウ'),
-      ]);
+  final img = Image.asset('images/banana_kawa_muke.png');
 
   // ロー
   final row = Row(
     mainAxisAlignment: MainAxisAlignment.center,
     crossAxisAlignment: CrossAxisAlignment.center,
-    children: [col, col, col],
+    children: [img, img, img],
   );
 
   final a = MaterialApp(
